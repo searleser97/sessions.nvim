@@ -44,7 +44,14 @@ end
 local get_session_path = function(path, ensure)
     ensure = ensure or true
 
-    if path and path ~= "" then
+
+    if config.use_unique_session_names then
+      if config.session_filepath then
+        path = vim.fn.expand(config.session_filepath, ":p") .. util.path.sep .. path .. "session"
+      else
+        print("use_unique_session_names requires session_filepath to be specified in config")
+      end
+    elseif path and path ~= "" then
         path = vim.fn.expand(path, ":p")
     elseif config.session_filepath ~= "" then
         if config.absolute then
