@@ -13,6 +13,9 @@ local config = {
     -- treat the default session filepath as an absolute path
     -- if true, all session files will be stored in a single directory
     absolute = false,
+
+    -- all session files will be stored in `session_filepath`
+    use_unique_session_names = false,
 }
 
 local M = {}
