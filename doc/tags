@@ -1,0 +1,10 @@
+:SessionsLoad	sessions.txt	/*:SessionsLoad*
+:SessionsSave	sessions.txt	/*:SessionsSave*
+:SessionsStop	sessions.txt	/*:SessionsStop*
+not	sessions.txt	/*not*
+sessions	sessions.txt	/*sessions*
+sessions-api	sessions.txt	/*sessions-api*
+sessions-configuration	sessions.txt	/*sessions-configuration*
+sessions-extra	sessions.txt	/*sessions-extra*
+sessions-usage	sessions.txt	/*sessions-usage*
+sessions.nvim	sessions.txt	/*sessions.nvim*

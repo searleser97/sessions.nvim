@@ -45,7 +45,7 @@ end
 -- the default session path if it exists. Will create intermediate directories
 -- as needed. Returns nil otherwise.
 M.get_session_path = function(path, ensure)
-    ensure = ensure or true
+    if ensure == nil then ensure = true end
 
 
     if config.use_unique_session_names then
